@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <title>Setting Candidates</title> 
+</head>
+<body>
+    <div class="container">
+        <header>Set Candidates</header>
+
+        <form action="#" method="post" class="for">
+            <div id="main">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title"></span>
+
+
+
+                    <div class="input-field">
+                        <label>Ward number&nbsp;&nbsp;&nbsp;</label>
+                        <input type="number" min="0" placeholder="Enter Ward Number" required>
+                    </div>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Party Name</label>
+                            <select required>
+                            <option disabled selected>Select Party Name</option>
+                            <option>Left Front</option>
+                            <option>Aam Admi Party</option>
+                            <option>Bharatiya Janta party</option>
+                            <option>All India Trinomool Congress</option>
+                            </select>
+                        </div>
+                        
+                        <div class="fields">
+                            <label>Upload Party Flag&nbsp;&nbsp;&nbsp;</label><br>
+                            <input type="file" name="image" id="fileimage" required class="form-control"
+                                accept="image/png, image/jpeg, image/jpg" /><br />
+                        
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>Candidate name</label>
+                            <input type="text" placeholder="Enter Candidate's name" required>
+                        </div>
+
+                        <div class="fields">
+                            <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
+                            <input type="file" name="image" id="fileimage" required class="form-control"
+                                accept="image/png, image/jpeg, image/jpg" /><br />
+                        
+                            
+                        </div>
+                        <div class="btnb" style="padding-bottom: 100px;">
+                        
+                          
+                            <button class="nextBtn" onclick="document.getElementById('ss').click()"> <!--<a href="javascript:data()" type="button">-->Add More
+                                    Candidates</a>
+                        
+                                <i class="uil uil-plus"></i>
+                            </button></div>
+                        
+                        
+                        
+                    <div class="abcd" style="padding-top: 100px; padding-right: 370px;">
+                        <button class="nextBtn1" style="position: relative;">
+                            Submit
+                    
+                            <i class="uil uil-upload"></i>
+                        </button>
+                    
+                    </div>
+                        
+                       </div>       
+                    </div>
+                </div>
+   
+            </div>
+        </div>  
+        
+        </form>
+        
+
+    </div>
+   <!-- <button id="ss" class="bb"><a href="javascript:data()" hidden></a> </button>-->
+<div id="subinput" class="for" style="display: none;">
+    <div class="form_sec">
+        <div class="details personal">
+            <span class="title"></span>
+
+
+
+            <div class="input-field">
+                <label>Ward number&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" min="0" placeholder="Enter Ward Number" required>
+            </div>
+
+            <div class="fields">
+                <div class="input-field">
+                    <label>Party Name</label>
+                    <select required>
+                        <option disabled selected>Select Party Name</option>
+                        <option>Left Front</option>
+                        <option>Aam Admi Party</option>
+                        <option>Bharatiya Janta party</option>
+                        <option>All India Trinomool Congress</option>
+                    </select>
+                </div>
+
+                <div class="fields">
+                    <label>Upload Party Flag&nbsp;&nbsp;&nbsp;</label><br>
+                    <input type="file" name="image" id="fileimage" required class="form-control"
+                        accept="image/png, image/jpeg, image/jpg" /><br />
+
+
+                </div>
+
+                <div class="input-field">
+                    <label>Candidate name</label>
+                    <input type="text" placeholder="Enter Candidate's name" required>
+                </div>
+
+                <div class="fields">
+                    <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
+                    <input type="file" name="image" id="fileimage" required class="form-control"
+                        accept="image/png, image/jpeg, image/jpg" /><br />
+
+
+                </div>
+                
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+</div>
+   
+    
+
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+        var a = 1;
+        function data(){
+            a++;
+            var input= document.createElement("div");
+            var dtd = '<div></div>';
+            input.innerHTML = document.getElementById('subinput').innerHTML + dtd;
+            document.getElementById("main").append(input);
+
+            
+        }
+
+
+
+    </script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
